@@ -1,0 +1,116 @@
+/* Target the whole scrollbar */
+::-webkit-scrollbar {
+  width: 5px;  /* for vertical scrollbars */
+  height: 5px; /* for horizontal scrollbars */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+.view-area{
+    position: relative;
+    min-width: 65%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 10px 10px 10px;
+    border-radius: 10px;
+}
+.para{
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 10px 0;
+}
+.view-area-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    overflow: auto;
+    max-height:180px;
+    
+}
+.view-area-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h3{
+  font-weight: bold;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 20px;
+}
+
+.view-area-buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+/* For use in .date (ViewArea) and .view-date (ViewCode) */
+
+.date,
+.view-date {
+  display: block;
+  font-size: 0.92em;
+  color: #6b7280;        /* Subtle gray for less emphasis than main content */
+  margin: 5px 0 0 0;
+  letter-spacing: 0.04em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+ 
+}
+
+.view-date strong {
+  font-weight: 600;
+  color: #3949ab;        /* Optional: give "Date:" label a slightly bolder accent */
+}
+
+
+@media (max-width: 600px) {
+    .view-area {
+        flex-direction: column;
+        padding: 10px;
+        margin: 5px;
+    }
+    .view-area-buttons {
+        flex-direction: column;
+        gap: 10px;;
+    }
+}

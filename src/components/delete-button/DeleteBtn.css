@@ -1,0 +1,22 @@
+.deletebtn{
+     min-width: 25%;
+    max-height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #ff5353;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.deletebtn:hover {
+    background-color: #fc0101; /* Darker red on hover */
+    /* color: black; */
+}
+

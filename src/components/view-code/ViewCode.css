@@ -1,0 +1,90 @@
+.view-code{
+    background-color: #393939;
+    color: white;
+    min-height: 80vh;
+    min-width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.code_element{
+    border: 1px dashed white;
+}
+.view_code_btn{
+    color: aliceblue;
+    background: rgb(18, 202, 2);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    position: fixed;
+    bottom: 20px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.view_code_btn:hover{
+    background: green;
+    color: white;
+    
+}
+h2{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+.heading{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 10px;
+}
+.code_element{
+    background-color: #000000;
+    color: yellow;
+    font-style:italic;font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 85vw;
+    border-radius: 5px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* For use in .date (ViewArea) and .view-date (ViewCode) */
+
+.date,
+.view-date {
+  display: block;
+  font-size: 0.92em;
+  color: #6b7280;        /* Subtle gray for less emphasis than main content */
+  margin: 5px 0 0 0;
+  letter-spacing: 0.04em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: 
+  white;
+  padding: 2px;
+  border-radius: 2px;
+  max-width: 160px;
+  position: sticky;
+  bottom: 10px;
+  font-weight: bold;
+}
+
+.view-date strong {
+  font-weight: 600;
+  color: #3949ab;        /* Optional: give "Date:" label a slightly bolder accent */
+}
